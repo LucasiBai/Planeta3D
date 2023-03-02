@@ -1,0 +1,14 @@
+.contact-form__box {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.contact-form__box .button {
+	display: flex;
+	justify-content: end;
+}
+
+.contact-form__box button {
+	color: black;
+}
