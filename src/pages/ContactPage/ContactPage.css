@@ -1,0 +1,24 @@
+.contact-page__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-page__box section {
+	max-width: 850px;
+	width: 100%;
+}
+
+.contact-page__box article h3 {
+	font-size: 40px;
+	margin-bottom: 4rem;
+}
+
+.contact-page__box article h3 span {
+	font-weight: 800;
+}
+
+.contact-page__box article h4 {
+	font-size: 25px;
+	margin-bottom: 3.5rem;
+}

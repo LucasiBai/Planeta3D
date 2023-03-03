@@ -1,0 +1,41 @@
+.hide-label {
+	display: none;
+}
+
+.form-input {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-input label {
+	margin-top: 0.5rem;
+	font-size: 25px;
+}
+
+.form-input textarea,
+.form-input input {
+	max-width: 640px;
+	width: 100%;
+	background: #bec3cc;
+	border-radius: 8px;
+	color: #282222;
+	padding: 1rem 1rem;
+	border: none;
+	font-size: 20px;
+}
+
+.form-input textarea {
+	min-height: 200px;
+	height: auto;
+	padding: 1rem;
+	resize: none;
+}
+
+.form-input textarea:focus,
+.form-input input:focus {
+	outline-width: 2px;
+	outline-style: double;
+	outline-color: #9698c9;
+	outline-offset: 1px;
+	transition: outline ease 0.3s;
+}

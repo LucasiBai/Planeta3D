@@ -1,0 +1,17 @@
+.button__box {
+	max-width: 416px;
+	width: 100%;
+	background: #efefef;
+	font-size: 26px;
+	padding: 1rem;
+	border-radius: 8px;
+	border: solid #bec3cc;
+	transition: opacity ease 0.4s;
+	color: #282222;
+	box-shadow: 0px 4px 12px rgb(40 34 34 / 25%);
+}
+
+.button__box:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}

@@ -1,0 +1,17 @@
+.contact-form__box {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.contact-form__box .form-button {
+	margin: 0.5rem 0;
+	display: flex;
+	justify-content: end;
+}
+
+.contact-form__box input::-webkit-outer-spin-button,
+.contact-form__box input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
