@@ -1,6 +1,14 @@
 import "./FormInput.css";
 
-const FormInput = ({ onChange, inputName, formData, textArea, label }) => {
+const FormInput = ({
+	onChange,
+	inputName,
+	formData,
+	textArea,
+	label,
+	type,
+	required,
+}) => {
 	return (
 		<div className="form-input">
 			<label className={!label ? "hide-label" : ""} htmlFor={inputName}>
@@ -12,13 +20,15 @@ const FormInput = ({ onChange, inputName, formData, textArea, label }) => {
 					name={inputName}
 					value={formData[inputName]}
 					onChange={onChange}
+					required={required}
 				/>
 			) : (
 				<input
-					type={"text"}
+					type={type}
 					value={formData[inputName]}
 					name={inputName}
 					onChange={onChange}
+					required={required}
 				/>
 			)}
 		</div>

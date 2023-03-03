@@ -1,5 +1,6 @@
 import { useForm } from "../../hooks/useForm";
 import FormInput from "../FormInput/FormInput";
+import ShadowButton from "../ShadowButton/ShadowButton";
 
 import "./ContactForm.css";
 
@@ -20,18 +21,24 @@ const ContactForm = ({ onSubmit }) => {
 				onChange={handleChange}
 				formData={formData}
 				label="Nombre"
+				type={"text"}
+				required
 			/>
 			<FormInput
 				inputName={"email"}
 				onChange={handleChange}
 				formData={formData}
 				label="E-mail"
+				type={"email"}
+				required
 			/>
 			<FormInput
 				inputName={"phone"}
 				onChange={handleChange}
 				formData={formData}
 				label="Celular"
+				type={"number"}
+				required
 			/>
 			<FormInput
 				inputName={"content"}
@@ -39,10 +46,10 @@ const ContactForm = ({ onSubmit }) => {
 				formData={formData}
 				label="Asunto"
 				textArea
+				required
 			/>
-			{/* TODO: Replace button */}
 			<div className="button">
-				<button type="submit">Enviar</button>
+				<ShadowButton small>Enviar</ShadowButton>
 			</div>
 		</form>
 	);

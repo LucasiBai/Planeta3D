@@ -5,10 +5,7 @@
 }
 
 .contact-form__box .button {
+	margin: 0.5rem 0;
 	display: flex;
 	justify-content: end;
-}
-
-.contact-form__box button {
-	color: black;
 }
