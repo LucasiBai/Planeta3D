@@ -1,0 +1,15 @@
+.shadow-button {
+	max-width: 416px;
+	width: 100%;
+	background: none;
+	font-size: 26px;
+	padding: 1rem;
+	border-radius: 8px;
+	border: solid #efefef;
+	transition: opacity ease 0.4s;
+}
+
+.shadow-button:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
