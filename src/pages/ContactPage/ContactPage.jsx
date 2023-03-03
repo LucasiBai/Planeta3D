@@ -4,11 +4,10 @@ import PageTitle from "../../components/PageTitle/PageTitle";
 
 import "./ContactPage.css";
 import ContactForm from "../../components/ContactForm/ContactForm";
-import Button from "../../components/Button/Button";
 
 const ContactPage = () => {
-	const sendMessage = (data) => {
-		ContactService.sendMessage(data);
+	const storeContactData = (data) => {
+		ContactService.storeContact(data);
 	};
 
 	return (
@@ -20,7 +19,7 @@ const ContactPage = () => {
 						¡Contame <span>tu idea</span> para que juntos la hagamos realidad!
 					</h3>
 					<h4>Completá este formulario:</h4>
-					<ContactForm onSubmit={sendMessage} />
+					<ContactForm onSubmit={storeContactData} />
 				</article>
 			</section>
 		</main>

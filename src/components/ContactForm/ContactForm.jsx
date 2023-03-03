@@ -48,7 +48,7 @@ const ContactForm = ({ onSubmit }) => {
 				textArea
 				required
 			/>
-			<div className="button">
+			<div className="form-button">
 				<ShadowButton small>Enviar</ShadowButton>
 			</div>
 		</form>
