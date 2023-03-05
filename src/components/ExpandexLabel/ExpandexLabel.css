@@ -1,0 +1,32 @@
+.expandex-label__box {
+	cursor: pointer;
+}
+
+.expandex-answer__box {
+	cursor: auto;
+}
+
+.expandex-label__box div {
+	background-color: #bec3cc;
+	padding: 1rem;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.expandex-label__box h4,
+.expandex-label__box h5,
+.expandex-label__box p {
+	color: #282222;
+	font-size: 20px;
+}
+
+.expandex-label__box h5 {
+	user-select: none;
+}
+
+.expandex-label__box p {
+	font-size: 16px;
+	cursor: text;
+}

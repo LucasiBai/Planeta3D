@@ -1,0 +1,12 @@
+.questions-page__box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.questions-page__box section {
+	max-width: 1200px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
