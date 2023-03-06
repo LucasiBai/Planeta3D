@@ -20,6 +20,6 @@
 
 .image-decoration img {
 	object-fit: contain;
-	user-select: none;
 	width: 75%;
+	transform: rotateY(180deg);
 }
