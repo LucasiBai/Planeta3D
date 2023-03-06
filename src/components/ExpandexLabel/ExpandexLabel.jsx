@@ -1,33 +1,30 @@
-import { useState } from "react";
 import "./ExpandexLabel.css";
 
-const ExpandexLabel = ({ question, answer }) => {
-	const [expanded, setExpanded] = useState(false);
-
-	const switchExpanded = () => {
-		setExpanded((prev) => !prev);
+const ExpandexLabel = ({ question, answer, onExpand, selected }) => {
+	const handleExpand = () => {
+		onExpand();
 	};
 
 	return (
 		<span className="expandex-label__box">
-			<div onClick={switchExpanded}>
+			<div className="expandex-label__header" onClick={handleExpand}>
 				<h4>{question}</h4>
-				{expanded ? <h5>-</h5> : <h5>+</h5>}
+				<span>{selected ? "-" : "+"}</span>
 			</div>
-			{expanded ? (
-				<div className="expandex-answer__box">
-					<p>
-						{answer.split("\n").map((paragraph) => (
-							<>
-								{paragraph}
-								<br />
-							</>
-						))}
-					</p>
-				</div>
-			) : (
-				<></>
-			)}
+			<div
+				className={
+					selected ? "expandex-label__content show" : "expandex-label__content"
+				}
+			>
+				<p>
+					{answer.split("\n").map((paragraph, idx) => (
+						<span key={idx}>
+							{paragraph}
+							<br />
+						</span>
+					))}
+				</p>
+			</div>
 		</span>
 	);
 };

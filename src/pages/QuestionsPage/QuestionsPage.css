@@ -6,7 +6,7 @@
 
 .questions-page__box section {
 	max-width: 1200px;
-	width: 100%;
+	width: 97%;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
 }

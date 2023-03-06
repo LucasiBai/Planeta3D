@@ -2,11 +2,8 @@
 	cursor: pointer;
 }
 
-.expandex-answer__box {
-	cursor: auto;
-}
-
-.expandex-label__box div {
+.expandex-label__box .expandex-label__header,
+.expandex-label__content {
 	background-color: #bec3cc;
 	padding: 1rem;
 	border-radius: 8px;
@@ -16,17 +13,33 @@
 }
 
 .expandex-label__box h4,
-.expandex-label__box h5,
-.expandex-label__box p {
+.expandex-label__box span {
 	color: #282222;
 	font-size: 20px;
 }
 
-.expandex-label__box h5 {
+.expandex-label__header span {
 	user-select: none;
 }
 
 .expandex-label__box p {
+	padding: 1rem;
+}
+
+.expandex-label__box p span {
 	font-size: 16px;
 	cursor: text;
+}
+
+.expandex-label__content {
+	padding: 0;
+	cursor: auto;
+	overflow: hidden;
+	max-height: 0px;
+	transition: max-height cubic-bezier(0, 1, 0, 1) 0.5s;
+}
+
+.expandex-label__content.show {
+	max-height: 9999px;
+	transition: max-height cubic-bezier(1, 0, 1, 0) 0.5s;
 }

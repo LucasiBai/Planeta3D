@@ -71,7 +71,7 @@ const QuestionsPage = () => {
 			<PageTitle>Preguntas Frecuentes</PageTitle>
 			<section>
 				<ExpandexLabelList qaList={initQA} />
-				<article style={{ backgroundColor: "blue" }}></article>
+				<article></article>
 			</section>
 		</main>
 	);
