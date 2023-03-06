@@ -8,5 +8,18 @@
 	max-width: 1200px;
 	width: 97%;
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 10fr 8fr;
+	gap: 1rem;
+}
+
+.questions-page__box .image-decoration {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.image-decoration img {
+	object-fit: contain;
+	user-select: none;
+	width: 75%;
 }
