@@ -1,7 +1,55 @@
+.home-page__box {
+	width: 100vw;
+	overflow-x: hidden;
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+}
+
 .home-page__box section {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	position: relative;
+	max-width: 1440px;
+	width: 100%;
+}
+
+.home-page__decoration .rocket-image {
+	position: absolute;
+	width: 164.18px;
+	height: 354.37px;
+	top: 311.83px;
+	right: -12px;
+	transform: rotate(-43.74deg);
+}
+
+.home-page__decoration .asteroid-image {
+	position: absolute;
+	width: 293px;
+	height: 262px;
+	left: -174px;
+	top: 109px;
+}
+.home-page__decoration .first-star-image {
+	position: absolute;
+	width: 55px;
+	height: 62px;
+	left: 101px;
+	top: 340px;
+}
+.home-page__decoration .second-star-image {
+	position: absolute;
+	width: 19px;
+	height: 21px;
+	left: 59px;
+	top: 416px;
+}
+.home-page__decoration .thirst-star-image {
+	position: absolute;
+	width: 39px;
+	height: 44px;
+	left: 51px;
+	top: 458px;
 }
 
 .home-page__box .home-page__content div {
@@ -17,6 +65,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: 5;
 }
 
 .home-page__box .home-page__content h2 {

@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-
 import DataService from "../../services/DataService";
+
+import { useData } from "../../hooks/useData";
 
 import ExpandexLabelList from "../../components/ExpandexLabelList/ExpandexLabelList";
 import PageTitle from "../../components/PageTitle/PageTitle";
@@ -8,16 +8,7 @@ import PageTitle from "../../components/PageTitle/PageTitle";
 import "./QuestionsPage.css";
 
 const QuestionsPage = () => {
-	const [qaList, setQAList] = useState([]);
-
-	const getData = async () => {
-		const data = await DataService.getQuestions();
-		setQAList(data);
-	};
-
-	useEffect(() => {
-		getData();
-	}, []);
+	const [qaList] = useData(DataService.getQuestions);
 
 	return (
 		<main className="questions-page__box">

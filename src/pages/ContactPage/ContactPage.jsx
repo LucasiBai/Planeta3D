@@ -1,9 +1,9 @@
 import ContactService from "../../services/ContactService";
 
+import ContactForm from "../../components/ContactForm/ContactForm";
 import PageTitle from "../../components/PageTitle/PageTitle";
 
 import "./ContactPage.css";
-import ContactForm from "../../components/ContactForm/ContactForm";
 
 const ContactPage = () => {
 	const storeContactData = (data) => {
