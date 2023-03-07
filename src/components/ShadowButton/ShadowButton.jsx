@@ -1,11 +1,12 @@
 import "./ShadowButton.css";
 
-const ShadowButton = ({ children, rest, small }) => {
+const ShadowButton = ({ children, onClick, small, rest }) => {
 	return (
 		<button
 			className="shadow-button"
-			{...rest}
 			style={small ? { maxWidth: 192 } : {}}
+			onClick={onClick}
+			{...rest}
 		>
 			{children}
 		</button>
