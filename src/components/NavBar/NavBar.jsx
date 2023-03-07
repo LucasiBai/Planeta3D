@@ -15,17 +15,17 @@ function NavBar() {
     </div>
     <ul className="nav-links">
       <li className={active === 'home' ? '' : 'active'}>
-        <a href="#home" onClick={() => handleNavItemClick('home')}>
+        <a href="#aboutus" onClick={() => handleNavItemClick('aboutus')}>
           ¿Quienes somos?
         </a>
       </li>
-      <li className={active === 'about' ? 'active' : ''}>
-        <a href="#about" onClick={() => handleNavItemClick('about')}>
+      <li className={active === 'ourservices' ? 'active' : ''}>
+        <a href="#ourservices" onClick={() => handleNavItemClick('ourservices')}>
           Nuestros servicios
         </a>
       </li>
-      <li className={active === 'services' ? 'active' : ''}>
-        <a href="#services" onClick={() => handleNavItemClick('services')}>
+      <li className={active === 'faq' ? 'active' : ''}>
+        <a href="#faq" onClick={() => handleNavItemClick('faq')}>
           Preguntas frecuentes
         </a>
       </li>

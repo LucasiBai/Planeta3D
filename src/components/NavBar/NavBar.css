@@ -22,7 +22,11 @@ nav {
     margin: 0px 10px;
   }
   
-  
+  .nav-links li.active a {
+    color: yellow;
+    font-weight: bold;
+  }
+
   nav .nav-links li a:hover {
     color: #f00;
   }
