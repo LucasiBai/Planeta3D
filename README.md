@@ -20,7 +20,7 @@ To clone and run this application, you'll need Git and Node.js installed on your
 
 ## Information:
 
-This is a project maded with ReactJS for the 3D printing store "Planeta 3D" in Córdoba, Argentina.
+This is a project made with ReactJS for the 3D printing store "Planeta 3D" in Córdoba, Argentina.
 
 ## Deploy Link:
 
@@ -32,9 +32,8 @@ https://planeta3-ms6ni47d0-lucasibai.vercel.app/
 
 ## Tools:
 
-- ReactJs
-- React Testing Library
-- ReactRouterDom
-- Firebase
+- [ReactJs](https://es.reactjs.org/)
+- [ReactRouterDom](https://reactrouter.com/)
+- [FontAwesome](https://fontawesome.com/)
 
 <!-- ## Example: -->
