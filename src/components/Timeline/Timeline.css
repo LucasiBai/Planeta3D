@@ -1,0 +1,6 @@
+.timeline__box {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1050px;
+	width: 100%;
+}

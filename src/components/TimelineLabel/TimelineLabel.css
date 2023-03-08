@@ -1,0 +1,36 @@
+.timeline-label__box {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	align-items: center;
+	max-width: 205px;
+}
+
+.timeline-label__box h3 {
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.timeline-label__box h4,
+.timeline-label__box h4 span {
+	font-family: "Roboto";
+}
+
+.timeline-label__box h4 {
+	font-weight: 400;
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.timeline-label__box h4 span {
+	font-weight: 900;
+}
+
+.timeline-label__box svg {
+	filter: drop-shadow(0px 0px 6px #ffde59a2);
+}
+.timeline-label__box path {
+	color: #d1d18c;
+}
