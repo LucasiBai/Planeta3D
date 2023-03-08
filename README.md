@@ -24,7 +24,7 @@ This is a project made with ReactJS for the 3D printing store "Planeta 3D" in CÃ
 
 ## Deploy Link:
 
-https://planeta3-ms6ni47d0-lucasibai.vercel.app/
+https://planeta3d.vercel.app/
 
 ## Roots:
 
