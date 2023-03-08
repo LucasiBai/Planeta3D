@@ -15,8 +15,9 @@ const PopButtons = () => {
 
 	return (
 		<div className="pop-button__list">
-			{popButtonsList.map((button) => (
+			{popButtonsList.map((button, idx) => (
 				<PopChildButton
+					key={idx}
 					icon={button?.icon}
 					tooltipLabel={button?.tooltip}
 					onClick={button?.action}
