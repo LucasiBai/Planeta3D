@@ -1,0 +1,39 @@
+.pop-child-button__box {
+	display: flex;
+	flex-direction: row-reverse;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.pop-child-button {
+	background: none;
+	border: none;
+	font-size: 40px;
+	cursor: pointer;
+	padding: 0.3rem;
+	display: flex;
+	border-radius: 40%;
+}
+
+.pop-child-button__box .tooltip__box {
+	overflow: hidden;
+	max-width: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: max-width cubic-bezier(0, 1, 0, 1) 0.5s;
+	border-radius: 8px;
+}
+
+.pop-child-button__box .tooltip__box.show {
+	max-width: 9999px;
+	transition: max-width cubic-bezier(1, 0, 1, 0) 0.5s;
+}
+
+.pop-child-button__box .tooltip {
+	background-color: #bec3cc;
+	white-space: nowrap;
+	color: #282222;
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+}
