@@ -29,6 +29,10 @@ https://planeta3-ms6ni47d0-lucasibai.vercel.app/
 ## Roots:
 
 - Home: `/`
+- AboutUs: `/about-us`
+- Products: `/services`
+- Questions: `/help`
+- Contact: `/contact`
 
 ## Tools:
 

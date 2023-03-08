@@ -22,6 +22,7 @@
 	align-items: center;
 	justify-content: center;
 	transition: max-width cubic-bezier(0, 1, 0, 1) 0.5s;
+	border-radius: 8px;
 }
 
 .pop-child-button__box .tooltip__box.show {

@@ -10,7 +10,7 @@ const PopButtons = () => {
 	const goWhatsApp = useWhatsApp();
 
 	const popButtonsList = [
-		{ icon: faWhatsapp, tooltip: "Enviar un mensaje", action: goWhatsApp },
+		{ icon: faWhatsapp, tooltip: "¡Envianos un mensaje!", action: goWhatsApp },
 	];
 
 	return (
