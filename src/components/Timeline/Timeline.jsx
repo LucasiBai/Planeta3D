@@ -13,6 +13,10 @@ const Timeline = ({ timelineLabels }) => {
 					highlightWords={label?.highlightWords ? label.highlightWords : []}
 				/>
 			))}
+
+			<div className="timeline__line">
+				<hr />
+			</div>
 		</article>
 	);
 };
