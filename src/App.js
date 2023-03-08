@@ -6,6 +6,7 @@ import ContactPage from "./pages/ContactPage/ContactPage";
 
 import NavBar from "./components/NavBar/NavBar.jsx";
 import PopButtons from "./components/PopButtons/PopButtons";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Route path="/services" element={<HomePage />} />
 				<Route path="/help" element={<QuestionsPage />} />
 				<Route path="/contact" element={<ContactPage />} />
+				<Route path="*" element={<NotFoundPage />} />
 			</Routes>
 		</BrowserRouter>
 	);
