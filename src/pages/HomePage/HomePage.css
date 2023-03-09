@@ -75,3 +75,20 @@
 	font-size: 100px;
 	margin: 5rem 0;
 }
+
+@media only screen and (max-width: 576px) {
+	.home-page__box .home-page__content {
+		width: 90%;
+	}
+
+	.home-page__box .home-page__content h2 {
+		font-size: 55px;
+	}
+
+	.home-page__decoration .rocket-image {
+		top: 246.83px;
+	}
+	.home-page__decoration .asteroid-image {
+		top: 30px;
+	}
+}
