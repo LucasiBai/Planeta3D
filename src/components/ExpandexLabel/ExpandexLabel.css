@@ -12,7 +12,7 @@
 	align-items: center;
 }
 
-.expandex-label__box h4,
+.expandex-label__box h3,
 .expandex-label__box span {
 	color: #282222;
 	font-size: 20px;
@@ -42,4 +42,16 @@
 .expandex-label__content.show {
 	max-height: 9999px;
 	transition: max-height cubic-bezier(1, 0, 1, 0) 0.5s;
+}
+
+@media only screen and (max-width: 576px) {
+	.expandex-label__box .expandex-label__header,
+	.expandex-label__content {
+		background-color: #ecedf0a8;
+	}
+
+	.expandex-label__box h3,
+	.expandex-label__box span {
+		color: rgb(14, 14, 14);
+	}
 }

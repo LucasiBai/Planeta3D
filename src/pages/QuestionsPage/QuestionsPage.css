@@ -18,8 +18,22 @@
 	justify-content: flex-end;
 }
 
-.image-decoration img {
+.questions-page__box .image-decoration img {
 	object-fit: contain;
 	width: 75%;
 	transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 576px) {
+	.questions-page__box section {
+		position: relative;
+		width: 95%;
+	}
+
+	.questions-page__box .image-decoration img {
+		position: absolute;
+		z-index: -1;
+		transform: rotate(0);
+		right: 1rem;
+	}
 }

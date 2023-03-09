@@ -17,7 +17,7 @@ const PopChildButton = ({ icon, tooltipLabel, onClick }) => {
 	return (
 		<div className="pop-child-button__box">
 			<button
-				className="pop-child-button"
+				aria-label="pop-button"
 				onClick={onClick}
 				onMouseEnter={showTooltip}
 				onMouseLeave={hideTooltip}
