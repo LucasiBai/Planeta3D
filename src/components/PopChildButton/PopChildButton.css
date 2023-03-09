@@ -5,7 +5,7 @@
 	align-items: center;
 }
 
-.pop-child-button {
+.pop-child-button__box button {
 	background: none;
 	border: none;
 	font-size: 40px;

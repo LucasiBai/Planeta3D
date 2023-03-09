@@ -1,0 +1,23 @@
+.timeline__box {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1050px;
+	width: 100%;
+	position: relative;
+}
+
+.timeline__box .timeline__line {
+	position: absolute;
+	bottom: 7px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.timeline__box hr {
+	background: #d1d18c;
+	border: none;
+	width: 80%;
+	height: 2px;
+	z-index: -1;
+}
