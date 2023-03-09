@@ -35,6 +35,7 @@
 	width: 217px;
 	left: 1rem;
 	transform: rotate(58deg);
+	filter: contrast(0.5);
 }
 
 .not-found-page .page-decoration .second-satellite {
@@ -42,4 +43,10 @@
 	right: 1rem;
 	width: 280px;
 	transform: rotate(15deg);
+}
+
+@media only screen and (max-width: 576px) {
+	.not-found-page button {
+		width: 90vw;
+	}
 }

@@ -42,3 +42,15 @@
 .timeline-label__box path {
 	color: #d1d18c;
 }
+
+@media only screen and (max-width: 576px) {
+	.timeline-label__box {
+		flex-direction: row-reverse;
+		max-width: 300px;
+	}
+
+	.timeline-label__text {
+		max-width: 205px;
+		gap: 0.5rem;
+	}
+}

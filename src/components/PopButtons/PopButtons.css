@@ -7,3 +7,9 @@
 	z-index: 10;
 	gap: 0.5rem;
 }
+
+@media only screen and (max-width: 576px) {
+	.pop-button__list {
+		right: 1.6rem;
+	}
+}

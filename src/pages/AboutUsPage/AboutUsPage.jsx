@@ -33,9 +33,13 @@ const AboutUsPage = () => {
 					/>
 					<p>
 						<span>
-							Soy Daniel Agustín Testa, Tengo 26 años, actualmente me dedico a
+							Soy Daniel Agustín Testa, tengo 26 años, actualmente me dedico a
 							tiempo completo a mi emprendimiento de impresiones 3D.
 						</span>
+						<BrightImage
+							src="https://www.denofgeek.com/wp-content/uploads/2021/10/Jim-The-Office-John-Krasinski.jpg?resize=768%2C432"
+							alt="daniel-testa"
+						/>
 						<span>
 							La idea de mi emprendimiento surgió hace dos años, en el momento
 							que empecé a investigar sobre cómo era este mundo de la impresión

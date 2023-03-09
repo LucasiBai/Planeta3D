@@ -21,3 +21,24 @@
 	height: 2px;
 	z-index: -1;
 }
+
+@media only screen and (max-width: 576px) {
+	.timeline__box {
+		flex-direction: column;
+		gap: 5.5rem;
+		align-items: center;
+		width: auto;
+	}
+	.timeline__box hr {
+		height: 77%;
+		width: 2px;
+	}
+
+	.timeline__box .timeline__line {
+		bottom: auto;
+		left: 7px;
+		height: 100%;
+		width: auto;
+		align-items: center;
+	}
+}
