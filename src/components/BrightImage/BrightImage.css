@@ -1,0 +1,7 @@
+.bright-image {
+	width: 192px;
+	height: 192px;
+	filter: drop-shadow(2px -5px 35px rgba(255, 255, 255, 0.31));
+	border-radius: 100%;
+	object-fit: cover;
+}

@@ -39,3 +39,13 @@
 	outline-offset: 1px;
 	transition: outline ease 0.3s;
 }
+
+@media only screen and (max-width: 576px) {
+	.form-input {
+		flex-direction: column;
+	}
+	.form-input input,
+	.form-input textarea {
+		width: 92%;
+	}
+}

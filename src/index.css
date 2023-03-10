@@ -16,6 +16,7 @@ a {
 
 body {
 	background-color: #26273e;
+	min-height: 100vh;
 }
 
 .clipped {

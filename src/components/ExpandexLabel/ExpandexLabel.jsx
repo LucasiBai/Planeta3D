@@ -8,7 +8,7 @@ const ExpandexLabel = ({ question, answer, onExpand, selected }) => {
 	return (
 		<span className="expandex-label__box">
 			<div className="expandex-label__header" onClick={handleExpand}>
-				<h4>{question}</h4>
+				<h3>{question}</h3>
 				<span>{selected ? "-" : "+"}</span>
 			</div>
 			<div

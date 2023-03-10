@@ -1,0 +1,15 @@
+.pop-button__list {
+	position: fixed;
+	right: 5rem;
+	bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	z-index: 10;
+	gap: 0.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+	.pop-button__list {
+		right: 1.6rem;
+	}
+}
