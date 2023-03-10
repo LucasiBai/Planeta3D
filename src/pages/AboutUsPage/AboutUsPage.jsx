@@ -1,45 +1,27 @@
+import { useData } from "../../hooks/useData";
+
+import DataService from "../../services/DataService";
+
 import BrightImage from "../../components/BrightImage/BrightImage";
 import Timeline from "../../components/Timeline/Timeline";
 
 import "./AboutUsPage.css";
 
-const timelineLabels = [
-	{
-		year: 2021,
-		label: "Inicio del emprendimiento ",
-		highlightWords: ["inicio"],
-	},
-	{
-		year: 2022,
-		label: "Compra de la primera impresora",
-		highlightWords: ["impresora"],
-	},
-	{
-		year: 2023,
-		label: "Lanzamiento página web",
-		highlightWords: ["página", "web"],
-	},
-];
-
 const AboutUsPage = () => {
+	const [timelineLabels] = useData(DataService.getTimelineLabels);
+
 	return (
 		<main className="about-us-page">
 			<section>
 				<Timeline timelineLabels={timelineLabels} />
 				<article className="text-block">
-					<BrightImage
-						src="https://www.denofgeek.com/wp-content/uploads/2021/10/Jim-The-Office-John-Krasinski.jpg?resize=768%2C432"
-						alt="daniel-testa"
-					/>
+					<BrightImage src="./assets/dani.png" alt="daniel-testa" />
 					<p>
 						<span>
 							Soy Daniel Agustín Testa, tengo 26 años, actualmente me dedico a
 							tiempo completo a mi emprendimiento de impresiones 3D.
 						</span>
-						<BrightImage
-							src="https://www.denofgeek.com/wp-content/uploads/2021/10/Jim-The-Office-John-Krasinski.jpg?resize=768%2C432"
-							alt="daniel-testa"
-						/>
+						<BrightImage src="./assets/dani.png" alt="daniel-testa" />
 						<span>
 							La idea de mi emprendimiento surgió hace dos años, en el momento
 							que empecé a investigar sobre cómo era este mundo de la impresión
