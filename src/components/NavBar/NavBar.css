@@ -19,7 +19,7 @@ nav {
   }
   
   nav .nav-links li {
-    margin: 0px 10px;
+    margin: 0px 30px;
   }
   
   .nav-links li.active a {
@@ -29,4 +29,13 @@ nav {
 
   nav .nav-links li a:hover {
     color: #f00;
+  }
+
+  nav .nav-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .nav-logos p{
+    margin: 0px 40px;
   }

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import  {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import './NavBar.css';
 
 function NavBar() {
@@ -35,6 +37,10 @@ function NavBar() {
           Contacto
         </Link>
       </li>
+    </ul>
+    <ul className='nav-logos'>   
+    <FontAwesomeIcon icon={faTiktok} className='logo-insta'/>
+    <FontAwesomeIcon icon={faInstagram} className='logo-tiktok'/>
     </ul>
   </nav>
   );
