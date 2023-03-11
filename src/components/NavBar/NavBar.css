@@ -8,8 +8,8 @@ nav {
   }
   
   nav .logo img {
-    height: 50px;
-    width: auto;
+    height: 100%;
+    width: 40%;
   }
   
   nav .nav-links {

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 function NavBar() {
-  const [active, setActive] = useState('home');
+  const [active, setActive] = useState('');
 
   const handleNavItemClick = (item) => {
     setActive(item);
@@ -10,29 +11,29 @@ function NavBar() {
 
   return (
     <nav>
-    <div className="logo">
-      <img src="assets/logo.png" alt="Logo" />
-    </div>
+    <Link to="/" className="logo" onClick={() => handleNavItemClick('')}>
+      <img src="assets/logosinastro.svg" alt="Logo" />
+    </Link>
     <ul className="nav-links">
-      <li className={active === 'home' ? '' : 'active'}>
-        <a href="#aboutus" onClick={() => handleNavItemClick('aboutus')}>
+      <li className= {active === 'about-us' ? 'active' : ''} >
+        <Link to="/about-us" onClick={() => handleNavItemClick('about-us')}>
           ¿Quienes somos?
-        </a>
+        </Link>
       </li>
-      <li className={active === 'ourservices' ? 'active' : ''}>
-        <a href="#ourservices" onClick={() => handleNavItemClick('ourservices')}>
+      <li className={active === 'services' ? 'active' : ''}>
+        <Link to="/services" onClick={() => handleNavItemClick('services')}>
           Nuestros servicios
-        </a>
+        </Link>
       </li>
-      <li className={active === 'faq' ? 'active' : ''}>
-        <a href="#faq" onClick={() => handleNavItemClick('faq')}>
+      <li className={active === 'help' ? 'active' : ''}>
+        <Link to="help" onClick={() => handleNavItemClick('help')}>
           Preguntas frecuentes
-        </a>
+        </Link>
       </li>
       <li className={active === 'contact' ? 'active' : ''}>
-        <a href="#contact" onClick={() => handleNavItemClick('contact')}>
+        <Link to="/contact" onClick={() => handleNavItemClick('contact')}>
           Contacto
-        </a>
+        </Link>
       </li>
     </ul>
   </nav>
