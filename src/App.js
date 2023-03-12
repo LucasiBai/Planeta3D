@@ -11,6 +11,7 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import ProductsPage from "./pages/ProductsPage/ProductsPage";
 
 import Footer from "./components/Footer/Footer";
+
 function App() {
 	return (
 		<BrowserRouter>
@@ -25,7 +26,7 @@ function App() {
 				<Route path="/contact" element={<ContactPage />} />
 				<Route path="*" element={<NotFoundPage />} />
 			</Routes>
-			<Footer/>
+			<Footer className="footer"/>
 		</BrowserRouter>
 	);
 }
