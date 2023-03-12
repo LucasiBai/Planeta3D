@@ -5,11 +5,13 @@ nav {
     background-color: #26273e;
     padding: 15px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
   }
   
   nav .logo img {
+    margin-left: 10px;
     height: 100%;
-    width: 40%;
+    width: 50%;
   }
   
   nav .nav-links {
@@ -25,17 +27,22 @@ nav {
   .nav-links li.active a {
     color: yellow;
     font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 15px;
   }
 
   nav .nav-links li a:hover {
-    color: #f00;
+    color: yellow;
   }
 
   nav .nav-logos {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
-  nav .nav-logos p{
-    margin: 0px 40px;
+  nav .nav-logos li{
+    margin: 0px 30px;
+    height: auto;
+    width: auto;
   }
