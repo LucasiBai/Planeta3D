@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
-
+import CardList from "../../components/CardList/CardList.jsx"
+ 
 const ProductsPage = () => {
 	return (
 		<>
@@ -11,6 +12,7 @@ const ProductsPage = () => {
 				></meta>
 			</Helmet>
 			<main className="products-page">Products</main>
+			<CardList/>
 		</>
 	);
 };
