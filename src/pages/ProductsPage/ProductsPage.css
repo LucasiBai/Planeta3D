@@ -3,5 +3,24 @@
 }
 
 .card-list {
-    margin: 5%;
+
+}
+
+
+.img-saturno {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    object-fit: fill;
+    height: 300px;
+}
+
+.container-title 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
