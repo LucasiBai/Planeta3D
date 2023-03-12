@@ -1,7 +1,15 @@
 import CardItem  from '../CardItem/CardItem.jsx' 
+import "./CardList.css"
 
 const CardList = () => {
     const cardData = [
+      {
+        title: 'Llavero',
+        subtitle: 'Cámara de fotos',
+        desc1: "Material: PETG ",
+        desc2: "Medidas: 3cm de alto por 5cm de ancho.",
+        image: '/assets/llavero-camara.png',
+      },
       {
         title: 'Juego sumergible',
         subtitle: 'Estrella',
@@ -10,25 +18,18 @@ const CardList = () => {
         image: '/assets/juguete.png',
       },
       {
-        title: 'Card 2',
-        subtitle: 'Subtitle 2',
-        desc1: "Material: PETG ",
+        title: 'Llavero',
+        subtitle: 'Me gusta',
+        desc1: "Material: PETG",
         desc2: "Medidas: 3cm de alto por 5cm de ancho.",
-        image: 'https://via.placeholder.com/300x200.png?text=Imagen2',
-      },
-      {
-        title: 'Card 3',
-        subtitle: 'Subtitle 3',
-        desc1: "Material: PETG ",
-        desc2: "Medidas: 3cm de alto por 5cm de ancho.",
-        image: 'https://via.placeholder.com/300x200.png?text=Imagen3',
+        image: '/assets/llavero-mg.png',
       },      
       {
-        title: 'Card 4',
-        subtitle: 'Subtitle 3',
+        title: 'Botón',
+        subtitle: 'Smile',
         desc1: "Material: PETG ",
-        desc2: "Medidas: 3cm de alto por 5cm de ancho.",
-        image: 'https://via.placeholder.com/300x200.png?text=Imagen3',
+        desc2: "Medidas: 0,5 cm de alto por 0,5 cm de ancho.",
+        image: '/assets/botones.png',
       },
     ];
   

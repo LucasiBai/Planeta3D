@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import CardList from "../../components/CardList/CardList.jsx"
- 
+import "./ProductsPage.css"
+
 const ProductsPage = () => {
 	return (
 		<>
@@ -11,8 +12,9 @@ const ProductsPage = () => {
 					content="En Planeta 3D ofrecemos servicios de impresión 3D de alta calidad para hacer realidad tus ideas y proyectos. Contamos con una amplia variedad de materiales y ofrecemos diferentes opciones de acabado para adaptarnos a tus necesidades. ¡Haz realidad tus ideas con nosotros!"
 				></meta>
 			</Helmet>
-			<main className="products-page">Products</main>
-			<CardList/>
+			<main className="products-page">Products
+			<CardList className="card-list"/>
+			</main>
 		</>
 	);
 };
