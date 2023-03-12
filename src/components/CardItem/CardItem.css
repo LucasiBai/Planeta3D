@@ -13,21 +13,22 @@
 
 .card > * {
   text-align: left;
-  margin: 10px;
-  
 }
 
-
 .card > img {
-  margin-top: 20px;
-  width: 60%;
-  height: auto;
+  width: 180px;
+  height: 180px;
 }
 
 .card-title 
 {
+  color: black;
   padding-top: 30px;
   font-weight: 600;
+}
+
+.card-subtitle {
+  color: black;
 }
 
 .card-description 
@@ -36,6 +37,6 @@
   align-items: left;
 }
 
-p, h1, h2, h3 {
+.card-description > p {
   color: black;
 }
