@@ -3,21 +3,31 @@ import CardItem  from '../CardItem/CardItem.jsx'
 const CardList = () => {
     const cardData = [
       {
-        title: 'Card 1',
-        subtitle: 'Subtitle 1',
-        description: 'Description 1',
-        image: 'https://via.placeholder.com/300x200.png?text=Imagen1',
+        title: 'Juego sumergible',
+        subtitle: 'Estrella',
+        desc1: "Material: PLA",
+        desc2: "Medidas: 7cn de alto por 7cm de ancho.",
+        image: '/assets/juguete.png',
       },
       {
         title: 'Card 2',
         subtitle: 'Subtitle 2',
-        description: 'Description 2',
+        desc1: "Material: PETG ",
+        desc2: "Medidas: 3cm de alto por 5cm de ancho.",
         image: 'https://via.placeholder.com/300x200.png?text=Imagen2',
       },
       {
         title: 'Card 3',
         subtitle: 'Subtitle 3',
-        description: 'Description 3',
+        desc1: "Material: PETG ",
+        desc2: "Medidas: 3cm de alto por 5cm de ancho.",
+        image: 'https://via.placeholder.com/300x200.png?text=Imagen3',
+      },      
+      {
+        title: 'Card 4',
+        subtitle: 'Subtitle 3',
+        desc1: "Material: PETG ",
+        desc2: "Medidas: 3cm de alto por 5cm de ancho.",
         image: 'https://via.placeholder.com/300x200.png?text=Imagen3',
       },
     ];
@@ -29,7 +39,8 @@ const CardList = () => {
             key={index}
             title={card.title}
             subtitle={card.subtitle}
-            description={card.description}
+            desc1={card.desc1}
+            desc2={card.desc2}
             image={card.image}
           />
         ))}

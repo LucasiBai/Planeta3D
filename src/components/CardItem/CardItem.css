@@ -1,5 +1,4 @@
 .card {
-  color: black;
   background-color: #BEC3CC;
   border-radius: 20px;
   display: flex;
@@ -8,17 +7,36 @@
   align-items: center;
   padding: 20px;
   margin: 10px;
-  height: 400px; /* ajusta la altura según tus necesidades */
-  width: 300px; /* ajusta el ancho según tus necesidades */
+  height: 350px; /* ajusta la altura según tus necesidades */
+  width: 250px; /* ajusta el ancho según tus necesidades */
   
 }
 
 .card > * {
-  text-align: center;
+  text-align: left;
   margin: 10px;
+  
 }
 
+
 .card > img {
-  width: 100%;
+  margin-top: 20px;
+  width: 60%;
   height: auto;
+}
+
+.card-title 
+{
+  padding-top: 30px;
+  font-weight: 600;
+}
+
+.card-description 
+{
+  padding-top: 15px;
+  align-items: left;
+}
+
+p, h1, h2, h3 {
+  color: black;
 }
