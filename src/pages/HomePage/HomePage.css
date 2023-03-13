@@ -3,7 +3,7 @@
 	width: 100%;
 	overflow-x: hidden;
 	display: flex;
-	min-height: 100vh;
+	min-height: 80vh;
 	justify-content: center;
 }
 
