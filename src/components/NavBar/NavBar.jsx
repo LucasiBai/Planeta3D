@@ -1,42 +1,61 @@
-import React, { useState } from 'react';
-import './NavBar.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import "./NavBar.css";
+import SideMenu from "../SideMenu/SideMenu";
 
 function NavBar() {
-  const [active, setActive] = useState('home');
+	const [active, setActive] = useState("");
 
-  const handleNavItemClick = (item) => {
-    setActive(item);
-  };
+	const handleNavItemClick = (item) => {
+		setActive(item);
+	};
 
-  return (
-    <nav>
-    <div className="logo">
-      <img src="assets/logo.png" alt="Logo" />
-    </div>
-    <ul className="nav-links">
-      <li className={active === 'home' ? '' : 'active'}>
-        <a href="#home" onClick={() => handleNavItemClick('home')}>
-          ¿Quienes somos?
-        </a>
-      </li>
-      <li className={active === 'about' ? 'active' : ''}>
-        <a href="#about" onClick={() => handleNavItemClick('about')}>
-          Nuestros servicios
-        </a>
-      </li>
-      <li className={active === 'services' ? 'active' : ''}>
-        <a href="#services" onClick={() => handleNavItemClick('services')}>
-          Preguntas frecuentes
-        </a>
-      </li>
-      <li className={active === 'contact' ? 'active' : ''}>
-        <a href="#contact" onClick={() => handleNavItemClick('contact')}>
-          Contacto
-        </a>
-      </li>
-    </ul>
-  </nav>
-  );
+	return (
+		<nav>
+			<div className="burger">
+				<SideMenu />
+			</div>
+			<Link to="/" className="logo" onClick={() => handleNavItemClick("")}>
+				<img src="assets/logo.svg" alt="Logo" />
+			</Link>
+			<ul className="nav-links">
+				<li className={active === "about-us" ? "active" : ""}>
+					<Link to="/about-us" onClick={() => handleNavItemClick("about-us")}>
+						¿Quienes somos?
+					</Link>
+				</li>
+				<li className={active === "services" ? "active" : ""}>
+					<Link to="/services" onClick={() => handleNavItemClick("services")}>
+						Nuestros servicios
+					</Link>
+				</li>
+				<li className={active === "help" ? "active" : ""}>
+					<Link to="help" onClick={() => handleNavItemClick("help")}>
+						Preguntas frecuentes
+					</Link>
+				</li>
+				<li className={active === "contact" ? "active" : ""}>
+					<Link to="/contact" onClick={() => handleNavItemClick("contact")}>
+						Contacto
+					</Link>
+				</li>
+			</ul>
+			<ul className="nav-logos">
+				<li className="log-insta">
+					<a href="https://instagram.com/planeta3d__">
+						<FontAwesomeIcon icon={faInstagram} size="2x" />
+					</a>
+				</li>
+				<li className="logo-tiktok">
+					<a href="https://tiktok.com/@planeta.3d">
+						<FontAwesomeIcon icon={faTiktok} size="2x" />
+					</a>
+				</li>
+			</ul>
+		</nav>
+	);
 }
 
-export default NavBar
+export default NavBar;
