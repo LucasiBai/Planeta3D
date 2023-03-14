@@ -11,7 +11,7 @@ nav {
 nav .logo img {
 	margin-left: 10px;
 	height: auto;
-	max-width: 130px;
+	max-width: 160px;
 	width: 100%;
 }
 
@@ -52,6 +52,10 @@ nav .burger {
 }
 
 @media only screen and (max-width: 576px) {
+	nav {
+		padding: 1rem 2rem;
+	}
+
 	nav .nav-links,
 	nav .nav-logos {
 		display: none;
@@ -59,7 +63,7 @@ nav .burger {
 	nav .logo img {
 		margin-left: 10px;
 		height: auto;
-		max-width: 100px;
+		max-width: 90px;
 		width: 100%;
 	}
 

@@ -15,7 +15,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
 	return (
 		<BrowserRouter>
-			<NavBar />
+			<NavBar logo={"assets/logo.svg"} />
 			<PopButtons />
 			<h1 className="clipped">Planeta 3D</h1>
 			<Routes>
@@ -26,7 +26,7 @@ function App() {
 				<Route path="/contact" element={<ContactPage />} />
 				<Route path="*" element={<NotFoundPage />} />
 			</Routes>
-			<Footer className="footer"/>
+			<Footer className="footer" />
 		</BrowserRouter>
 	);
 }

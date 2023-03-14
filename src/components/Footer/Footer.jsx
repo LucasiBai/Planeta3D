@@ -7,7 +7,7 @@ const Footer = () => {
 	return (
 		<footer className="footer-container">
 			<div className="footer-logo-container">
-				<img class="footer-img" src="assets/logosinastro.svg" alt="logo" />
+				<img className="footer-img" src="assets/logosinastro.svg" alt="logo" />
 				<div className="footer-links-container">
 					<a href="https://www.instagram.com/planeta3d__/%22%3E">
 						<FontAwesomeIcon icon={faInstagram} size="2x" />

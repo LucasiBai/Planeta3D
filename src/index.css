@@ -19,6 +19,12 @@ body {
 	min-height: 100vh;
 }
 
+#root {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
 .clipped {
 	clip: rect(0 0 0 0);
 	border: 0;
@@ -36,4 +42,4 @@ body {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-  }
+}

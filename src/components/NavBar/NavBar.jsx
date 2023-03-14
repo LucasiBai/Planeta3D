@@ -4,22 +4,31 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./NavBar.css";
 import SideMenu from "../SideMenu/SideMenu";
+import { useLinks } from "../../hooks/useLinks";
 
-function NavBar() {
+function NavBar({ logo }) {
 	const [active, setActive] = useState("");
 
 	const handleNavItemClick = (item) => {
 		setActive(item);
 	};
 
+	const [links, asideIcons] = useLinks();
+
 	return (
 		<nav>
 			<div className="burger">
-				<SideMenu />
+				<SideMenu links={links} asideIcons={asideIcons} />
 			</div>
-			<Link to="/" className="logo" onClick={() => handleNavItemClick("")}>
-				<img src="assets/logo.svg" alt="Logo" />
-			</Link>
+
+			{logo ? (
+				<Link to="/" className="logo" onClick={() => handleNavItemClick("")}>
+					<img src={logo} alt="Logo" />
+				</Link>
+			) : (
+				<></>
+			)}
+
 			<ul className="nav-links">
 				<li className={active === "about-us" ? "active" : ""}>
 					<Link to="/about-us" onClick={() => handleNavItemClick("about-us")}>
@@ -42,6 +51,7 @@ function NavBar() {
 					</Link>
 				</li>
 			</ul>
+
 			<ul className="nav-logos">
 				<li className="log-insta">
 					<a href="https://instagram.com/planeta3d__">
