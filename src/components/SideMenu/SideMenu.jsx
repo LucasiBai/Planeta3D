@@ -1,4 +1,3 @@
-import { faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 
@@ -9,7 +8,7 @@ import CloseButton from "../CloseButton/CloseButton";
 
 import "./SideMenu.css";
 
-const SideMenu = () => {
+const SideMenu = ({ links, asideIcons }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
@@ -32,28 +31,25 @@ const SideMenu = () => {
 			>
 				<CloseButton margin={"0 0 3rem"} onClick={() => setIsOpen(false)} />
 				<ul>
-					<li>
-						<Link to="/about-us">¿Quienes somos?</Link>
-					</li>
-					<li>
-						<Link to="/services">Nuestros servicios</Link>
-					</li>
-					<li>
-						<Link to="help">Preguntas frecuentes</Link>
-					</li>
-					<li>
-						<Link to="/contact">Contacto</Link>
-					</li>
-					<li>
-						<div style={{ display: "flex", gap: "1rem" }}>
-							<a href="https://tiktok.com/@planeta.3d">
-								<FontAwesomeIcon icon={faTiktok} size="2x" />
-							</a>
-							<a href="https://instagram.com/planeta3d__">
-								<FontAwesomeIcon icon={faInstagram} size="2x" />
-							</a>
-						</div>
-					</li>
+					{links.map((link, idx) => (
+						<li key={idx}>
+							<Link to={link.url}>{link.label}</Link>
+						</li>
+					))}
+
+					{asideIcons ? (
+						<li>
+							<div style={{ display: "flex", gap: "1rem" }}>
+								{asideIcons.map((icon, idx) => (
+									<a href={icon.url} key={idx}>
+										<FontAwesomeIcon icon={icon.icon} size="2x" />
+									</a>
+								))}
+							</div>
+						</li>
+					) : (
+						<></>
+					)}
 				</ul>
 			</div>
 		</div>
