@@ -1,50 +1,48 @@
+header {
+	display: flex;
+	justify-content: center;
+	background-color: #26273e;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #26273e;
-	padding: 15px;
-	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	gap: 2rem;
 	font-size: 24px;
+	max-width: 1440px;
+	width: 100%;
+	margin: 1.5rem 5rem;
 }
 
 nav .logo img {
-	margin-left: 10px;
-	height: auto;
-	max-width: 160px;
+	max-height: 118px;
+	height: 100%;
 	width: 100%;
+	min-width: 90px;
 }
 
 nav .nav-links {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-nav .nav-links li {
-	margin: 0px 30px;
-}
-
-.nav-links li.active a {
-	color: yellow;
-	font-weight: bold;
-	text-decoration: underline;
-	text-underline-offset: 15px;
-}
-
-nav .nav-links li a:hover {
-	color: yellow;
+	gap: 3.7rem;
 }
 
 nav .nav-logos {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	max-width: 140px;
+	width: 100%;
+	gap: 1rem;
 }
+
 nav .nav-logos li {
-	margin: 0px 30px;
 	height: auto;
 	width: auto;
+	font-size: 37px;
 }
 
 nav .burger {
@@ -53,7 +51,7 @@ nav .burger {
 
 @media only screen and (max-width: 576px) {
 	nav {
-		padding: 1rem 2rem;
+		margin: 1rem 2rem;
 	}
 
 	nav .nav-links,
