@@ -5,6 +5,7 @@ import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./NavBar.css";
 import SideMenu from "../SideMenu/SideMenu";
 import { useLinks } from "../../hooks/useLinks";
+import NavLink from "../NavLink/NavLink";
 
 function NavBar({ logo }) {
 	const [active, setActive] = useState("");
@@ -31,26 +32,33 @@ function NavBar({ logo }) {
 				)}
 
 				<ul className="nav-links">
-					<li className={active === "about-us" ? "active" : ""}>
-						<Link to="/about-us" onClick={() => handleNavItemClick("about-us")}>
-							¿Quienes somos?
-						</Link>
-					</li>
-					<li className={active === "services" ? "active" : ""}>
-						<Link to="/services" onClick={() => handleNavItemClick("services")}>
-							Nuestros servicios
-						</Link>
-					</li>
-					<li className={active === "help" ? "active" : ""}>
-						<Link to="help" onClick={() => handleNavItemClick("help")}>
-							Preguntas frecuentes
-						</Link>
-					</li>
-					<li className={active === "contact" ? "active" : ""}>
-						<Link to="/contact" onClick={() => handleNavItemClick("contact")}>
-							Contacto
-						</Link>
-					</li>
+					<NavLink
+						route={"about-us"}
+						active={active}
+						onClick={handleNavItemClick}
+					>
+						¿Quienes somos?
+					</NavLink>
+
+					<NavLink
+						route={"services"}
+						active={active}
+						onClick={handleNavItemClick}
+					>
+						Nuestros servicios
+					</NavLink>
+
+					<NavLink route={"help"} active={active} onClick={handleNavItemClick}>
+						Preguntas frecuentes
+					</NavLink>
+
+					<NavLink
+						route={"contact"}
+						active={active}
+						onClick={handleNavItemClick}
+					>
+						Contacto
+					</NavLink>
 				</ul>
 
 				<ul className="nav-logos">

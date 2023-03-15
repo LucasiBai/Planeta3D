@@ -9,7 +9,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-
+	gap: 2rem;
 	font-size: 24px;
 	max-width: 1440px;
 	width: 100%;
@@ -20,6 +20,7 @@ nav .logo img {
 	max-height: 118px;
 	height: 100%;
 	width: 100%;
+	min-width: 90px;
 }
 
 nav .nav-links {
@@ -29,27 +30,15 @@ nav .nav-links {
 	gap: 3.7rem;
 }
 
-nav .nav-links li {
-	font-size: 18px;
-}
-
-.nav-links li.active a {
-	color: yellow;
-	font-weight: bold;
-	text-decoration: underline;
-	text-underline-offset: 15px;
-}
-
-nav .nav-links li a:hover {
-	color: yellow;
-}
-
 nav .nav-logos {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	gap: 4.5rem;
+	max-width: 140px;
+	width: 100%;
+	gap: 1rem;
 }
+
 nav .nav-logos li {
 	height: auto;
 	width: auto;
