@@ -5,6 +5,7 @@ import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./NavBar.css";
 import SideMenu from "../SideMenu/SideMenu";
 import { useLinks } from "../../hooks/useLinks";
+import NavLink from "../NavLink/NavLink";
 
 function NavBar({ logo }) {
 	const [active, setActive] = useState("");
@@ -16,55 +17,64 @@ function NavBar({ logo }) {
 	const [links, asideIcons] = useLinks();
 
 	return (
-		<nav>
-			<div className="burger">
-				<SideMenu links={links} asideIcons={asideIcons} />
-			</div>
+		<header>
+			<nav>
+				<div className="burger">
+					<SideMenu links={links} asideIcons={asideIcons} />
+				</div>
 
-			{logo ? (
-				<Link to="/" className="logo" onClick={() => handleNavItemClick("")}>
-					<img src={logo} alt="Logo" />
-				</Link>
-			) : (
-				<></>
-			)}
+				{logo ? (
+					<Link to="/" className="logo" onClick={() => handleNavItemClick("")}>
+						<img src={logo} alt="Logo" />
+					</Link>
+				) : (
+					<></>
+				)}
 
-			<ul className="nav-links">
-				<li className={active === "about-us" ? "active" : ""}>
-					<Link to="/about-us" onClick={() => handleNavItemClick("about-us")}>
+				<ul className="nav-links">
+					<NavLink
+						route={"about-us"}
+						active={active}
+						onClick={handleNavItemClick}
+					>
 						¿Quienes somos?
-					</Link>
-				</li>
-				<li className={active === "services" ? "active" : ""}>
-					<Link to="/services" onClick={() => handleNavItemClick("services")}>
-						Nuestros servicios
-					</Link>
-				</li>
-				<li className={active === "help" ? "active" : ""}>
-					<Link to="help" onClick={() => handleNavItemClick("help")}>
-						Preguntas frecuentes
-					</Link>
-				</li>
-				<li className={active === "contact" ? "active" : ""}>
-					<Link to="/contact" onClick={() => handleNavItemClick("contact")}>
-						Contacto
-					</Link>
-				</li>
-			</ul>
+					</NavLink>
 
-			<ul className="nav-logos">
-				<li className="log-insta">
-					<a href="https://instagram.com/planeta3d__">
-						<FontAwesomeIcon icon={faInstagram} size="2x" />
-					</a>
-				</li>
-				<li className="logo-tiktok">
-					<a href="https://tiktok.com/@planeta.3d">
-						<FontAwesomeIcon icon={faTiktok} size="2x" />
-					</a>
-				</li>
-			</ul>
-		</nav>
+					<NavLink
+						route={"services"}
+						active={active}
+						onClick={handleNavItemClick}
+					>
+						Nuestros servicios
+					</NavLink>
+
+					<NavLink route={"help"} active={active} onClick={handleNavItemClick}>
+						Preguntas frecuentes
+					</NavLink>
+
+					<NavLink
+						route={"contact"}
+						active={active}
+						onClick={handleNavItemClick}
+					>
+						Contacto
+					</NavLink>
+				</ul>
+
+				<ul className="nav-logos">
+					<li className="log-insta">
+						<a href="https://instagram.com/planeta3d__">
+							<FontAwesomeIcon icon={faInstagram} />
+						</a>
+					</li>
+					<li className="logo-tiktok">
+						<a href="https://tiktok.com/@planeta.3d">
+							<FontAwesomeIcon icon={faTiktok} />
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 	);
 }
 

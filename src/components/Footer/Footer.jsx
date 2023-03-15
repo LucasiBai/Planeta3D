@@ -21,14 +21,14 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className="footer-info-container">
-				<p>
+				<a href="tel:+54 3468 41-6049">
 					<FontAwesomeIcon className="footer-icon" icon={faPhone} />
 					(3468) 41-6049
-				</p>
-				<p className="footer-info-email">
+				</a>
+				<a href="mailto:planetaimpresiones3d@gmail.com" className="footer-info-email">
 					<FontAwesomeIcon className="footer-icon" icon={faEnvelope} />
 					planetaimpresiones3d@gmail.com
-				</p>
+				</a>
 			</div>
 		</footer>
 	);
