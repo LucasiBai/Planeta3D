@@ -16,55 +16,57 @@ function NavBar({ logo }) {
 	const [links, asideIcons] = useLinks();
 
 	return (
-		<nav>
-			<div className="burger">
-				<SideMenu links={links} asideIcons={asideIcons} />
-			</div>
+		<header>
+			<nav>
+				<div className="burger">
+					<SideMenu links={links} asideIcons={asideIcons} />
+				</div>
 
-			{logo ? (
-				<Link to="/" className="logo" onClick={() => handleNavItemClick("")}>
-					<img src={logo} alt="Logo" />
-				</Link>
-			) : (
-				<></>
-			)}
+				{logo ? (
+					<Link to="/" className="logo" onClick={() => handleNavItemClick("")}>
+						<img src={logo} alt="Logo" />
+					</Link>
+				) : (
+					<></>
+				)}
 
-			<ul className="nav-links">
-				<li className={active === "about-us" ? "active" : ""}>
-					<Link to="/about-us" onClick={() => handleNavItemClick("about-us")}>
-						¿Quienes somos?
-					</Link>
-				</li>
-				<li className={active === "services" ? "active" : ""}>
-					<Link to="/services" onClick={() => handleNavItemClick("services")}>
-						Nuestros servicios
-					</Link>
-				</li>
-				<li className={active === "help" ? "active" : ""}>
-					<Link to="help" onClick={() => handleNavItemClick("help")}>
-						Preguntas frecuentes
-					</Link>
-				</li>
-				<li className={active === "contact" ? "active" : ""}>
-					<Link to="/contact" onClick={() => handleNavItemClick("contact")}>
-						Contacto
-					</Link>
-				</li>
-			</ul>
+				<ul className="nav-links">
+					<li className={active === "about-us" ? "active" : ""}>
+						<Link to="/about-us" onClick={() => handleNavItemClick("about-us")}>
+							¿Quienes somos?
+						</Link>
+					</li>
+					<li className={active === "services" ? "active" : ""}>
+						<Link to="/services" onClick={() => handleNavItemClick("services")}>
+							Nuestros servicios
+						</Link>
+					</li>
+					<li className={active === "help" ? "active" : ""}>
+						<Link to="help" onClick={() => handleNavItemClick("help")}>
+							Preguntas frecuentes
+						</Link>
+					</li>
+					<li className={active === "contact" ? "active" : ""}>
+						<Link to="/contact" onClick={() => handleNavItemClick("contact")}>
+							Contacto
+						</Link>
+					</li>
+				</ul>
 
-			<ul className="nav-logos">
-				<li className="log-insta">
-					<a href="https://instagram.com/planeta3d__">
-						<FontAwesomeIcon icon={faInstagram} size="2x" />
-					</a>
-				</li>
-				<li className="logo-tiktok">
-					<a href="https://tiktok.com/@planeta.3d">
-						<FontAwesomeIcon icon={faTiktok} size="2x" />
-					</a>
-				</li>
-			</ul>
-		</nav>
+				<ul className="nav-logos">
+					<li className="log-insta">
+						<a href="https://instagram.com/planeta3d__">
+							<FontAwesomeIcon icon={faInstagram} />
+						</a>
+					</li>
+					<li className="logo-tiktok">
+						<a href="https://tiktok.com/@planeta.3d">
+							<FontAwesomeIcon icon={faTiktok} />
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 	);
 }
 
