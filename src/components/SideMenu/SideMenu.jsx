@@ -32,7 +32,7 @@ const SideMenu = ({ links, asideIcons }) => {
 				<CloseButton margin={"0 0 3rem"} onClick={() => setIsOpen(false)} />
 				<ul>
 					{links.map((link, idx) => (
-						<li key={idx}>
+						<li key={idx} onClick={() => setIsOpen(false)}>
 							<Link to={link.url}>{link.label}</Link>
 						</li>
 					))}
