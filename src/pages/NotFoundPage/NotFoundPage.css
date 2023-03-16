@@ -49,4 +49,7 @@
 	.not-found-page button {
 		width: 90vw;
 	}
+	.not-found-page {
+		padding-bottom: 5rem;
+	}
 }
