@@ -6,6 +6,11 @@
 	align-items: center;
 }
 
+.nav-link a {
+	text-align: center;
+}
+
+
 .nav-link.active a {
 	font-weight: bold;
 }
