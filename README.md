@@ -1,7 +1,7 @@
 <h1 align="center">
   <br>
   <a href="https://www.instagram.com/planeta3d__/">
-  <img src="https://scontent.fcor11-1.fna.fbcdn.net/v/t39.30808-6/329022248_2087415871453407_1872073311350912393_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Kywa_e2uqa4AX8WbHfW&_nc_ht=scontent.fcor11-1.fna&oh=00_AfB_qo2zSvb_a8Rj6AswyBfJUNM0pQWiiapBPdnXbPxrSQ&oe=6405BDEB" alt="Markdownify" width="200"></a>
+  <img src="https://user-images.githubusercontent.com/99888705/226605682-ed2717f0-3411-4c5d-a9ba-417b2b12c311.svg" alt="Planeta3d" width="150"></a>
   <br>
   Ecommerce for Planeta 3D
   <br>
