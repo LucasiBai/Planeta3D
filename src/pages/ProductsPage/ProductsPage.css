@@ -3,8 +3,6 @@
 	padding-bottom: 3rem;
 }
 
-.card-list {
-}
 
 .img-saturno {
 	position: absolute;
@@ -17,9 +15,71 @@
 	z-index: -1;
 }
 
+.img-tierra {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: auto;
+	object-fit: fill;
+	height: 300px;
+	z-index: -1;
+}
+
 .container-title {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
+}
+
+.section-client {
+	margin-top: 200px;
+	margin-bottom: 150px;
+	background-color: #293856;
+	position: relative; /* agregamos position: relative para que los elementos posicionados dentro de la sección se ajusten a su tamaño */
+}
+
+.container-client {
+	margin: 100px;
+	display: flex;
+	align-items: left;
+	position: relative; /* agregamos position: relative para que los elementos posicionados dentro del contenedor se ajusten a su tamaño */
+}
+
+.img-astronauta {
+	position: absolute;
+	height: 280px;
+	right: 0;
+	padding-right: 20%;
+	top: 50%; /* agregamos top: 50% para centrar verticalmente la imagen */
+	transform: translateY(-50%); /* agregamos transform: translateY(-50%) para ajustar la imagen en la posición vertical correcta */
+}
+
+.pregunta-cliente {
+	position: absolute;
+	top: 0; /* agregamos top: 0 para asegurarnos de que el texto aparezca en la parte superior de la sección */
+	left: 0; /* agregamos left: 0 para asegurarnos de que el texto aparezca en el lado izquierdo de la sección */
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.container-client {
+		flex-direction: column; /* cambiamos la dirección de flex a columna en pantallas más pequeñas */
+		margin: 50px;
+	}
+
+	.img-astronauta {
+		position: relative;
+		height: 200px;
+		padding-right: 0;
+		margin: 0 auto; /* agregamos margin: 0 auto para centrar la imagen horizontalmente */
+		transform: none; /* eliminamos la transformación para que la imagen se posicione normalmente */
+	}
+
+	.pregunta-cliente {
+		position: relative;
+		padding: 0;
+	}
 }
