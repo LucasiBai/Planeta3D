@@ -1,59 +1,88 @@
 .products-page {
 	min-height: 100vh;
 	padding-bottom: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
 }
-
 
 .img-saturno {
 	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: auto;
-	object-fit: fill;
-	height: 300px;
+	width: 384px;
+	height: 233px;
+	right: -175px;
+	top: -15rem;
 	z-index: -1;
 }
 
 .img-tierra {
 	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: auto;
-	object-fit: fill;
-	height: 300px;
+	width: 280px;
+	height: 280px;
+	left: -160px;
+	top: 832px;
+	top: -2rem;
 	z-index: -1;
+}
+
+.products-page .img-star {
+	position: absolute;
+	width: 88px;
+	height: 90px;
+	left: 56px;
+	top: -7rem;
 }
 
 .container-title {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 53px;
+	margin-bottom: 191.5px;
 	position: relative;
 }
 
 .section-client {
-	margin-top: 200px;
-	margin-bottom: 150px;
+	align-items: center;
+	min-height: 317.6px;
+	margin-top: 168px;
+	margin-bottom: 176px;
 	background-color: #293856;
-	position: relative; /* agregamos position: relative para que los elementos posicionados dentro de la sección se ajusten a su tamaño */
+	position: relative;
 }
 
 .container-client {
-	margin: 100px;
+	margin: 0 184px;
 	display: flex;
+	flex-direction: column;
+	gap: 25.5px;
 	align-items: left;
-	position: relative; /* agregamos position: relative para que los elementos posicionados dentro del contenedor se ajusten a su tamaño */
+}
+
+.container-client h3,
+.container-client h4 {
+	font-family: "Roboto";
+}
+
+.container-client h3 {
+	font-weight: 600;
+	font-size: 34px;
+	z-index: 1;
+}
+.container-client h4 {
+	font-weight: 400;
+	font-size: 25px;
+	z-index: 1;
 }
 
 .img-astronauta {
 	position: absolute;
-	height: 280px;
-	right: 0;
-	padding-right: 20%;
-	top: 50%; /* agregamos top: 50% para centrar verticalmente la imagen */
-	transform: translateY(-50%); /* agregamos transform: translateY(-50%) para ajustar la imagen en la posición vertical correcta */
+	left: 73.17%;
+	right: 12.22%;
+	top: 7.56%;
+	bottom: 7.56%;
+	width: 210.31px;
 }
 
 .pregunta-cliente {
@@ -64,22 +93,56 @@
 	padding: 0;
 }
 
+.products-page .contact-page__box .page-title {
+	display: none;
+}
+
+.products-page .container-title,
+.products-page .custom-design,
+.products-page .container-client {
+	max-width: 1440px;
+	width: 100%;
+}
+
+.products-page .section-client {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+.products-page .custom-design {
+	position: relative;
+}
+
+.products-page .custom-design .page-title {
+	margin-bottom: 101px;
+}
+
 @media screen and (max-width: 768px) {
 	.container-client {
 		flex-direction: column; /* cambiamos la dirección de flex a columna en pantallas más pequeñas */
 		margin: 50px;
 	}
 
+	.pregunta-cliente {
+		position: relative;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 576px) {
 	.img-astronauta {
 		position: relative;
 		height: 200px;
 		padding-right: 0;
-		margin: 0 auto; /* agregamos margin: 0 auto para centrar la imagen horizontalmente */
-		transform: none; /* eliminamos la transformación para que la imagen se posicione normalmente */
+		margin: 0 auto;
+		object-fit: contain;
+		transform: none;
+		right: 0;
+		left: 0;
 	}
 
-	.pregunta-cliente {
-		position: relative;
-		padding: 0;
+	.products-page .card-list {
+		margin-right: 0;
+		margin-left: 0;
 	}
 }
