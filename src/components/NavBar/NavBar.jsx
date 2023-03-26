@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHref } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTiktok, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import "./NavBar.css";
@@ -8,7 +8,9 @@ import { useLinks } from "../../hooks/useLinks";
 import NavLink from "../NavLink/NavLink";
 
 function NavBar({ logo }) {
-	const [active, setActive] = useState("");
+	const page = useHref();
+
+	const [active, setActive] = useState(page.slice(1));
 
 	const handleNavItemClick = (item) => {
 		setActive(item);
@@ -32,33 +34,16 @@ function NavBar({ logo }) {
 				)}
 
 				<ul className="nav-links">
-					<NavLink
-						route={"about-us"}
-						active={active}
-						onClick={handleNavItemClick}
-					>
-						¿Quienes somos?
-					</NavLink>
-
-					<NavLink
-						route={"services"}
-						active={active}
-						onClick={handleNavItemClick}
-					>
-						Nuestros servicios
-					</NavLink>
-
-					<NavLink route={"help"} active={active} onClick={handleNavItemClick}>
-						Preguntas frecuentes
-					</NavLink>
-
-					<NavLink
-						route={"contact"}
-						active={active}
-						onClick={handleNavItemClick}
-					>
-						Contacto
-					</NavLink>
+					{links.map((link, idx) => (
+						<NavLink
+							route={link.url.slice(1)}
+							active={active}
+							onClick={handleNavItemClick}
+							key={idx}
+						>
+							{link.label}
+						</NavLink>
+					))}
 				</ul>
 
 				<ul className="nav-logos">

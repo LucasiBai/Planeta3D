@@ -1,11 +1,10 @@
 .card-list {
-	padding-inline: 200px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: 100px;
-	margin-right: 2.5%;
-	margin-left: 2.5%;
+	margin-right: 64px;
+	margin-left: 64px;
+	gap: 2rem;
 }
 
 @media only screen and (max-width: 576px) {
